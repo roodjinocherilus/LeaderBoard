@@ -1,6 +1,9 @@
 // import _ from 'lodash';
 import './style.css';
 
+import scores from './modules/get/score';
+
+
 const scoresList = document.querySelector('.list');
 const submitBtn = document.querySelector('.submit');
 const refreshButton = document.querySelector('.refresh');
@@ -17,7 +20,7 @@ form.addEventListener('click', (e) => {
     addScore(scoresList, userField.value, scoreField.value, message);
   } else if (e.target.matches('.refresh')) {
     e.preventDefault();
-    getScores(scoresList);
+    scores(scoresList);
   }
 });
 
