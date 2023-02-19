@@ -1,4 +1,4 @@
-import showPrompt from '../get/prompt';
+import showPrompt from "../get/prompt.js";
 
 const createGame = async (gameName, message) => {
   const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games', {
