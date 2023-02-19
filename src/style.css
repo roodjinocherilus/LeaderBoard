@@ -1,7 +1,20 @@
-.hello {
-    color: red;
-  }
 
-  body {
-    background-color: bisque;
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.refresh {
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  height: 40px;
 }
