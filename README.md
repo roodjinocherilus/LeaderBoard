@@ -3,7 +3,7 @@
 
 <div align="center">
 
-  <h3><b>Template-Webpack-Linters</b></h3>
+  <h3><b>LeaderBoard</b></h3>
 
 </div>
 
@@ -33,10 +33,10 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Awesome books] <a name="about-project"></a>
+# 📖 [LeaderBoard] <a name="about-project"></a>
 
 
-**WebPack and Linters Template** This is a template Repository for webpack project with Linters pre-installed
+**LeaderBoard** The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service.
 
 ## 🛠 Built With <a name="built-with"></a>
 - HTML
