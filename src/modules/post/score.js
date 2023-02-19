@@ -1,4 +1,5 @@
-import showPrompt from "../get/prompt";
+import showPrompt from "../get/prompt.js";
+import scores from "../get/score.js";
 
 
 const postScore = async (scores, user, score, message) => {
