@@ -1,8 +1,8 @@
 // import _ from 'lodash';
 import './style.css';
 
-import scores from './modules/get/score';
-import addScore from './modules/post/score';
+import scores from './modules/get/score.js';
+import addScore from './modules/post/score.js';
 
 const scoresList = document.querySelector('.list');
 const submitBtn = document.querySelector('.submit');
