@@ -1,4 +1,3 @@
-// import _ from 'lodash';
 import './style.css';
 
 import scores from './modules/get/score.js';

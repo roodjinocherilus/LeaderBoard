@@ -3,7 +3,7 @@ body {
   width: 50%;
   margin: auto;
   border: 1px solid #ccc;
-  height: 50vh;
+  height: auto;
   padding: 20px;
   margin-top: 50px;
 }
@@ -17,6 +17,23 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  width: 70%;
+}
+
+.list {
+  display: block;
+  border: 3px solid #ccc;
+  width: 70%;
+}
+
+li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
 }
 
 .refresh {
