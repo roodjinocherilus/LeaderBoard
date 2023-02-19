@@ -64,3 +64,17 @@ li {
 .success {
   background-color: green;
 }
+
+.add-score {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.form-score {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  width: 70%;
+}
