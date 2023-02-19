@@ -1,4 +1,13 @@
 
+body {
+  width: 50%;
+  margin: auto;
+  border: 1px solid #ccc;
+  height: 50vh;
+  padding: 20px;
+  margin-top: 50px;
+}
+
 .main {
   display: grid;
   grid-template-columns: 1fr 1fr;
