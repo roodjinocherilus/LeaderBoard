@@ -8,7 +8,7 @@ import addScore from './modules/post/score';
 const scoresList = document.querySelector('.list');
 const submitBtn = document.querySelector('.submit');
 const refreshBtn = document.querySelector('.refresh');
-const prompt = document.querySelector('.message');
+const prompt = document.querySelector('.prompt');
 
 
 
