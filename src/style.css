@@ -18,3 +18,23 @@
   cursor: pointer;
   height: 40px;
 }
+
+.error,
+.success {
+  margin-top: 20px;
+  width: 35%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 1px 1px 1px 1px black;
+}
+
+.error {
+  background-color: red;
+}
+
+.success {
+  background-color: green;
+}
