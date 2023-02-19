@@ -1,20 +1,21 @@
-import _ from 'lodash';
-import printMe from './print.js';
 import './style.css';
 
- function component() {
-   const element = document.createElement('div');
-  const btn = document.createElement('button');
+import scores from './modules/get/score.js';
+import addScore from './modules/post/score.js';
 
-   element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+const scoresList = document.querySelector('.list');
+const submitBtn = document.querySelector('.submit');
+const refreshBtn = document.querySelector('.refresh');
+const prompt = document.querySelector('.prompt');
 
-  btn.innerHTML = 'Click me and check the console!';
-  btn.onclick = printMe;
+refreshBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  scores(scoresList);
+});
 
-  element.appendChild(btn);
-  element.classList.add('hello');
-
-   return element;
- }
-
- document.body.appendChild(component());
+submitBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  const user = document.querySelector('.user').value;
+  const score = document.querySelector('.score').value;
+  addScore(scoresList, user, score, prompt);
+});

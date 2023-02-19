@@ -1,7 +1,80 @@
-.hello {
-    color: red;
-  }
 
-  body {
-    background-color: bisque;
+body {
+  width: 50%;
+  margin: auto;
+  border: 1px solid #ccc;
+  height: auto;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+}
+
+.list {
+  display: block;
+  border: 3px solid #ccc;
+  width: 70%;
+}
+
+li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.refresh {
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  height: 40px;
+}
+
+.error,
+.success {
+  margin-top: 20px;
+  width: 35%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 1px 1px 1px 1px black;
+}
+
+.error {
+  background-color: red;
+}
+
+.success {
+  background-color: green;
+}
+
+.add-score {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.form-score {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  width: 70%;
 }
