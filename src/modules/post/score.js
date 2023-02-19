@@ -1,3 +1,4 @@
+import showPrompt from "../get/prompt";
 
 
 const postScore = async (scores, user, score, message) => {
@@ -15,15 +16,15 @@ const postScore = async (scores, user, score, message) => {
         },
       });
       if (response.ok) {
-        getScores(scores);
+        scores(scores);
       } else {
-        showMessage(message, 'success', 'error', 'Something went wrong');
+        showPrompt(message, 'success', 'error', 'Something went wrong');
       }
       document.querySelector('.user').value = '';
       document.querySelector('.score').value = '';
   
       const json = await response.json();
-      showMessage(message, 'error', 'success', json.result);
+      showPrompt(message, 'error', 'success', json.result);
     }
   };
 
