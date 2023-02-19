@@ -28,5 +28,9 @@ function addScore(list, user, score, message) {
     const html = `<li>${user}: ${score}</li>`;
     list.insertAdjacentHTML('beforeend', html);
     prompt.textContent = 'Score added successfully';
+    message.textContent = 'Score added successfully';
+  document.querySelector('.user').value = '';
+  document.querySelector('.score').value = '';
+  submitButton.disabled = false;
   }
   
